@@ -1,0 +1,1 @@
+<view class="content"><image class="logo" src="/static/logo.png"></image><view class="text-area"><text class="title">{{title}}</text></view><button type="default" data-event-opts="{{[['tap',[['test']]]]}}" bindtap="__e">点击</button></view>
