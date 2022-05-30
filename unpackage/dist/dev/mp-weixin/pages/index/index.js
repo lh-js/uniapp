@@ -172,7 +172,7 @@ var _default =
 
 
       then(function (res) {
-        console.log(res.result); // 3
+        console.log(res); // 3
         wx.hideLoading();
       }).
       catch(console.error);
