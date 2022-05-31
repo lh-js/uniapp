@@ -8,21 +8,11 @@ exports.main = async (event, context) => {
 	const wxContext = cloud.getWXContext()
 	// 1. 获取数据库引用
 	const db = cloud.database()
-	let result = db.collection('test').add({
+	let result = await db.collection('test').add({
 			// data 字段表示需新增的 JSON 数据
 			data: {
-				description: "learn cloud database",
-				due: new Date("2018-09-01"),
-				tags: [
-					"cloud",
-					"database"
-				],
-				location: new db.Geo.Point(113, 23),
-				done: false
+				test:"2"
 			}
 		})
-		.then(res => {
-			console.log(res)
-		})
-		return result
+	return result
 }

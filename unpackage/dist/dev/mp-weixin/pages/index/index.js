@@ -158,6 +158,16 @@ var _default =
   },
   methods: {
     test: function test() {
+      // const db = wx.cloud.database()
+      // db.collection('test').add({
+      // 		// data 字段表示需新增的 JSON 数据
+      // 		data: {
+      // 			description: "learn cloud database"
+      // 		}
+      // 	})
+      // 	.then(res => {
+      // 		console.log(res)
+      // 	})
       wx.showLoading({
         title: '加载中',
         mask: true });
